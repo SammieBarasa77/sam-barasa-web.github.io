@@ -1,0 +1,18 @@
+
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .project-container {
+        display: flex;
+        flex-direction: column; /* Stack projects vertically */
+        align-items: center;
+        gap: 20px; /* Add space between projects */
+    }
+
+    .project-card {
+        width: 90%; /* Make project cards occupy most of the screen */
+        margin: 0 auto; /* Center-align them */
+    }
+}
+
+

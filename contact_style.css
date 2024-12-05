@@ -1,0 +1,85 @@
+
+#contact-section, #socials-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+#contact-section h3, #socials-section h4 {
+    text-align: center;
+    color: #333;
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    text-align: center;
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+.contact-item h4 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#socials-section ul.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#socials-section ul.icons li {
+    list-style-type: none;
+}
+
+#socials-section ul.icons li a {
+    font-size: 2em;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+#socials-section ul.icons li a:hover {
+    color: #007bff;
+}
+
+#github-icon ul.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#github-icon ul.icons li {
+    list-style-type: none;
+}
+
+#github-icon ul.icons li a {
+    font-size: 2em;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+#github-icon ul.icons li a:hover {
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+}

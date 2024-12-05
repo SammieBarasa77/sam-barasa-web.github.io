@@ -1,0 +1,284 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Samuel Barasa Data Analytics Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        /* Menu styling */
+        .menu-icon {
+            cursor: pointer;
+            font-size: 24px;
+            padding: 10px;
+            border: none;
+            background-color: transparent;
+        }
+
+        /* Hide the menu initially */
+        #menu-list {
+            display: none;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            top: 60px;
+            right: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+        }
+
+        #menu-list li {
+            padding: 10px;
+        }
+
+        #menu-list li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #menu-list li:hover {
+            background-color: #f4f4f4;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Header -->
+        <header id="header">
+            <h1><a href="index.html">SAMUEL BARASA PORTFOLIO</a></h1>
+
+            <!-- Menu Icon -->
+            <button class="menu-icon" onclick="toggleMenu()">☰</button>
+
+            <!-- Menu List (Hidden by Default) -->
+            <ul id="menu-list">
+                <li><a href="#projects-section">Projects</a></li>
+                <li><a href="#message-section">Message Me</a></li>
+                <li><a href="#contact-section">Contact Info</a></li>
+            </ul>
+        </header>
+
+        <!-- Main Content -->
+        <div id="main">
+            <!-- Projects Section -->
+            <section id="projects-section">
+                <h2>Projects</h2>
+                <!-- Your Projects Here -->
+            </section>
+
+            <!-- Message Me Section -->
+            <section id="message-section">
+                <h2>Message Me</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email"><br><br>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea><br><br>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+
+            <!-- Contact Info Section -->
+            <section id="contact-section">
+                <h2>Contact Info</h2>
+                <p>Email: samuelbarasa55@gmail.com</p>
+                <p>Phone: +254-745-983135</p>
+                <p>Location: Nairobi, Kenya</p>
+            </section>
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Function to toggle menu visibility
+        function toggleMenu() {
+            var menu = document.getElementById('menu-list');
+            if (menu.style.display === 'none' || menu.style.display === '') {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+		<!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Header -->
+                <header id="header">
+                    <h1><a>SAMUEL BARASA PORTFOLIO</a></h1>
+
+                    <nav class="main">
+                        <ul>
+                            <li class="menu">
+                                <a class="fa-menu" href="#menu">Menu</a>
+                                <form id="menu" method="get" action="#">
+                                    <input type="text" name="query" placeholder="Menu" />
+                                </form>
+                            </li>
+                            <li class="menu">
+                            </li>
+                        </ul>
+                    </nav>
+
+                </header>
+
+
+
+
+
+
+            						<!-- Search -->
+					<html lang="en">
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>Search Projects</title>
+                            <style>
+                                .project {
+                                    margin: 10px 0;
+                                    padding: 10px;
+                                    border: 1px solid #ddd;
+                                }
+                                .hidden {
+                                    display: none;
+                                }
+                            </style>
+                        </head>
+                        <body>
+                            <section>
+                                <input type="text" id="search-input" placeholder="Search for a project">
+                                <button onclick="searchProjects()">Search</button>
+                            </section>
+    
+                            <section id="projects-list">
+                                <div class="project">Predictive Analytics for Sales</div>
+                                <div class="project">Inventory Management</div>
+                                <div class="project">Employee Performance Analytics</div>
+                                <div class="project">Churn Analysis</div>
+                                <div class="project">Web Scraping and Data Visualization</div>
+                                <div class="project">Interactive Dashboard and Report</div>
+                                <div class="project">Data Cleaning</div>
+                                <div class="project">Inventory Management</div>
+                            </section>
+    
+                            <script>
+                                function searchProjects() {
+                                    // Get the search query
+                                    const query = document.getElementById('search-input').value.toLowerCase();
+    
+                                    // Get all projects
+                                    const projects = document.querySelectorAll('.project');
+    
+                                    // Loop through all projects and hide those that don't match the query
+                                    projects.forEach(project => {
+                                        const projectName = project.textContent.toLowerCase();
+                                        if (projectName.includes(query)) {
+                                            project.classList.remove('hidden');
+                                        } else {
+                                            project.classList.add('hidden');
+                                        }
+                                    });
+                                }
+                            </script>
+                        </body>
+
+
+
+                        					<!-- Projects Section -->
+						<section id="projects-section">
+							<h2>Projects</h2>
+							<p>Here are my portfolio projects.</p>
+						</section>
+
+						<!-- Message Me Section -->
+						<section id="message-section">
+							<h2>Message Me</h2>
+							<p>Feel free to leave me a message here.</p>
+						</section>
+
+						<!-- Contact Info Section -->
+						<section id="contact-section">
+							<h2>Contact Info</h2>
+							<p>Here is my contact information.</p>
+						</section>
+
+
+
+                        <!-- Post -->
+<article class="post" style="border-radius: 15px; border: 1px solid #ccc; overflow: hidden;">
+	<header>
+		<div class="title">
+			<h3>Predictive Analytics for Sales</h3>
+		</div>
+		<div class="meta">
+			<time class="published" datetime="2024-05-10">May, 2024</time>
+		</div>
+	</header>
+	<a href="single.html" class="image featured">
+		<img src="images/predictive.jpg" alt="" style="border-radius: 15px 15px 0 0;" />
+	</a>
+	<p style="margin: 0; font-size: 0.65em;">In this project, I developed a predictive sales analysis model using advanced machine learning techniques. The model forecasts future sales based on historical data, seasonal trends, and external factors, enabling businesses to optimize their inventory management and marketing strategies. This project demonstrates my proficiency in predictive analytics, data preprocessing, and model evaluation.</p>
+	<footer>
+		<ul class="actions">
+			<li><a href="single.html" class="button large">View Project</a></li>
+		</ul>
+	</footer>
+</article>
+
+
+<ul>
+    <li class="menu">
+        <button class="menu-icon" style="border-radius: 10px; border: 1.5px solid #80e2bdd2; overflow: hidden;" onclick="toggleMenu()">☰Menu</button>
+        <ul id="menu-list" style="display:none;">
+            <li><a href="#projects-section">Main Projects</a></li></br>
+            <li><a href="#otherprojects-section">Other Projects</a></li></br>
+            <li><a href="#message-section">Message Me</a></li></br>
+            <li><a href="#contact-section">Contact Info</a></li>											
+        </ul>
+    </li>
+</ul>
+
+
+							
+<ul>
+    <li class="menu">
+        <button class="menu-icon" style="border-radius: 10px; border: 1.5px solid #80e2bdd2; overflow: hidden;" onclick="toggleMenu()">☰Menu</button>
+        <ul id="menu-list" style="display:none;">
+            <li><a href="#projects-section">Main Projects</a></li></br>
+            <li><a href="#otherprojects-section">Other Projects</a></li></br>
+            <li><a href="#message-section">Message Me</a></li></br>
+            <li><a href="#contact-section">Contact Info</a></li>											
+        </ul>
+    </li>
+</ul>
+</nav>
+</header>
+<script>
+function toggleMenu() {
+var menu = document.getElementById('menu-list');
+if (menu.style.display === 'none' || menu.style.display === '') {
+menu.style.display = 'block';
+} else {
+menu.style.display = 'none';
+}
+}
